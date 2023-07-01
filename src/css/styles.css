@@ -1,9 +1,12 @@
 body {
   margin: 0;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 img {
   display: block;
+  border-top: 8px;
   width: 250px;
   height: 150px;
   margin: 0;
@@ -29,6 +32,7 @@ a {
 .photo-card {
   width: 250px;
   height: 250px;
+  border-radius: 8px;
   border: 2px solid gray;
   display: flex;
   flex-direction: column;
@@ -37,7 +41,8 @@ a {
 .info {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 5px;
+  margin-left: 5px;
 }
 
 .search-box {
@@ -56,35 +61,6 @@ a {
   display: flex;
 }
 
-.main-input {
-  border: 1px solid gray;
-  padding: 5px 15px;
-  border-right: none;
-  border-radius: 3px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-.main-input::placeholder {
-  font-size: 12px;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  color: #555555;
-}
-
-.submit-btn {
-  border: 1px solid gray;
-  background-color: #f1eff1;
-  border-left: none;
-  border-radius: 3px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-
-.submit-btn:hover {
-  background-color: #b0b0b0;
-}
-
 .search-svg {
   fill: #555555;
 }
@@ -99,4 +75,21 @@ a {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+}
+
+.main-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
 }
